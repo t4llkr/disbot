@@ -2159,5 +2159,3 @@ async def on_command_error(ctx, error):
             file.write(str(datetime.now()) + ' ' + str(author) + ' args_error\n')
     elif isinstance(error, commands.CommandOnCooldown):
         await ctx.reply('Во избежание дудоса команду можно повторить только через ' + str(round(error.retry_after, 2)) + ' секунд.', mention_author=True)
-
-bot.run('ODE0NjQ1MTQ0MzYzNTk3ODU1.YDg3aQ.0p9jJMVYDjYMfInGoqqjYMhJ6Qc')
